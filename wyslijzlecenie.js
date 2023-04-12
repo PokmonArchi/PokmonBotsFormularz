@@ -8,8 +8,8 @@ function sendMail(){
         Host: "sandbox.smtp.mailtrap.io",
         Username: "a9ffe2f7e594d3",
         Password: "fec72bf71c142c",
-        To:"contact.pokmonbot@gmail.com",
-        From:`zleceniodawca@gmail.com`,
+        To:"to@example.com",
+        From:`from@example.com`,
         Subject:"Zlecenie",
         Body: `${message}`
     }).then(alert("Udało się wysłać wiadomość!"));
