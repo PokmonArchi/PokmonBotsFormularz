@@ -13,4 +13,5 @@ function sendMail(){
         Subject:"Zlecenie",
         Body: `${message}`
     }).then(alert("Udało się wysłać wiadomość!"));
+    console.log(Email);
 }
