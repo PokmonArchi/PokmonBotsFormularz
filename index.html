@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formularz Zgłoszeniowy - Pokmon Bots</title>
+</head>
+<body>
+    <header class = 'header'>Formularz Zgłoszeniowy - Pokmon Bots</header>
+    <section class = 'section'>
+        <form action="index.php" method="post">
+            <label>Nick z Discorda(z tagiem): </label>
+            <p><input type="text" name="nick" id="nick" placeholder="Nick z Discorda" class="input" required></p>
+            <label>Rodzaj zamówienia: </label>
+            <p><select class = 'select' name = "select"required>
+                <option value="Nowe zlecenie">Nowe zlecenie</option>
+                <option value = "Modernizacja/DLC">Modernizacja/DLC</option>
+                <option value = "Zażalenie">Zażalenie</option>
+            </select></p>
+            <label>Nazwa Bota: </label>
+            <p><input type="text" name="bot-nazwa" id="bot" placeholder="Nazwa Bota" class = "input" required></p>
+            <label>Uwagi: (W przypadku, kiedy składasz zażalenie, pisz tu, co Ci nie pasuje, w przeciwnych wypadkach, co bot ma robić)</label>
+            <p><textarea name="uwagi" id="uwagi" cols="30" rows="10" class="textarea" placeholder="Uwagi"></textarea></p>
+            <p><input type="checkbox" id="checkbox" class = "checkbox" required> Oświadczam, że zapoznałem/am się z <a href = "cennik.html">cennikiem usługi</a>.</p>
+            <p><input type="checkbox" id="checkbox" class = "checkbox" required> Przyjmuję do wiadomości, że odwołanie zlecenia musi nastąpić przed końcem jego realizacji(odwołać je można w <a href = "odwolania.html">tym miejscu</a>). W przeciwnym wypadku zdaję sobie sprawę, że muszę zapłacić za zrealizowane zlecenie.</p><br>
+            <p> <input type="submit" value="Złóż zlecenie" class = "button"> <input type="reset" value="Resetuj formularz" class = "button"></p>
+        </form>
+    </section>
+    <footer class = "footer">
+        <p>Pokmon Bots - Boty na serwery Discord.</p>
+    </footer>
+</body>
+</html>

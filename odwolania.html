@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Formularz Zgłoszeniowy - Pokmon Bots</title>
+</head>
+<body>
+    <header class = 'header'>Formularz Zgłoszeniowy - Pokmon Bots</header>
+    <section class = 'section'>
+        <form action="odwolania.php" method="post">
+            <label>Nick z Discorda(z tagiem): </label>
+            <p><input type="text" name="nick" id="nick" placeholder="Nick z Discorda" class="input" required></p>
+            <label>Nazwa Bota: </label>
+            <p><input type="text" name="bot-nazwa" id="bot" placeholder="Nazwa Bota" class = "input" required></p>
+            <label>Uwagi:(Dlaczego anulujesz zlecenie)</label>
+            <p><textarea name="uwagi" id="uwagi" cols="30" rows="10" class="textarea" placeholder="Uwagi"></textarea></p>
+            <p> <input type="submit" value="Wycofaj zlecenie" class = "button"> <input type="reset" value="Resetuj formularz" class = "button"></p>
+            <p><a href = "index.html" style="font-size:20px">Powrót na stronę główną</a></p>
+        </form>
+    </section>
+    <footer class = "footer">
+        <p>Pokmon Bots - Boty na serwery Discord.</p>
+    </footer>
+</body>
+</html>
