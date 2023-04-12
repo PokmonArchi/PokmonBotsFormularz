@@ -5,9 +5,9 @@ function sendMail(){
     let uwagi = document.getElementById('uwagi').value;
     let message = `Nick użytkownika: ${nick}\n Nazwa bota: ${botName}\n rodzaj zlecenia: ${rodzajzlecenia}\n Uwagi: ${uwagi}`;
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "contact.pokmonbot@gmail.com",
-        Password: "Poliki999",
+        Host: "sandbox.smtp.mailtrap.io",
+        Username: "a9ffe2f7e594d3",
+        Password: "fec72bf71c142c",
         To:"contact.pokmonbot@gmail.com",
         From:`zleceniodawca@gmail.com`,
         Subject:"Zlecenie",
